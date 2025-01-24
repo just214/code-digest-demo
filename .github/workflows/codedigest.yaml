@@ -25,7 +25,7 @@ jobs:
           node-version: "18" # Using a recent LTS version
 
       - name: Make script executable
-        run: chmod +x ./code-digest/code-digest.js
+        run: chmod +x ./code-digest/codedigest.js
 
       - name: Generate Code Digest
         run: node ./code-digest/codedigest.js --output digest.txt
