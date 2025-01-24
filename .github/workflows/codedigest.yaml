@@ -25,7 +25,7 @@ jobs:
       run: ./code-digest.js --output digest.txt
 
     - name: Upload Digest as Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: code-digest
         path: digest.txt
