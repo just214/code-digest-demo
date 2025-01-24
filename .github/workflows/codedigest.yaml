@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: "18" # Using a recent LTS version
 
-      # - name: Make script executable
-      #   run: chmod +x ./code-digest/code-digest.js
+      - name: Make script executable
+        run: chmod +x ./code-digest/code-digest.js
 
       - name: Generate Code Digest
-        run: ./code-digest/code-digest.js --output digest.txt
+        run: node ./code-digest/code-digest.js --output digest.txt
 
       - name: Upload Digest as Artifact
         uses: actions/upload-artifact@v4
